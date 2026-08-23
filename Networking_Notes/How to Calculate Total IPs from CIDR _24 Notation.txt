@@ -1,0 +1,25 @@
+Company ne tumhein ek main IP network diya hai: 192.168.1.0/24 (Jisme total 256 IPs hain). is ip adres mai kese pata chala ki 256 ips hai ?
+
+Yeh pata chalana boht aasan hai!
+
+Aapko bas Slash Value (/24) ko dekhna hota hai aur Binary Math ka ek chota sa rule apply karna hota hai.
+
+
+
+Step-by-Step Hisab (Formula)Step 1: IPv4 me Total Bits kitne hote hain?Internet Protocol version 4 (IPv4) me total 32 bits hote hain.Total Bits = 32
+
+
+Step 2: Host Bits (Bachat Bits) Nikaalo
+IP ke aage jo /24 likha hai, uska matlab hai ke 32 me se 24 bits Network ke naam ke liye book (lock) ho chuki hain.
+
+Baaki kitni bits bachi jo hum apne PCs aur devices (Hosts) ko de sakte hain?
+
+Host Bits = 32 - 24 = 8 bits
+
+Step 3: Total IPs ka Formula LagaoNetworking me IPs humesha 2 ki power me calculate hoti hain 2^x, kyunki computer Binary (0 aur 1) samajhta hai.
+
+Total IPs = 2^(Host Bits)
+
+So 
+
+Total ips =2^8=256
