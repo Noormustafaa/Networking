@@ -1,0 +1,46 @@
+What is DNS ?
+
+
+DNS (Domain Name System) – The Phonebook of the Internet
+
+ The Problem
+
+Computers communicate with each other strictly using numerical IP addresses (such as `142.250.190.46`). However, it is impossible for humans to memorize long numerical strings for thousands of different websites.
+
+The Solution & Real-Life Example
+
+Real-Life Example: Think of your mobile phone's contact list. You don't need to memorize your friend's 10-digit phone number—you simply search for "Ali", tap call, and your phone connects using the underlying number.
+"Network Role": DNS functions as the internet's contact list. When you type **`google.com`** into your browser, the DNS server translates that human-readable domain name into its corresponding IP address (`142.250.190.46`) so your computer can locate it.
+
+---
+
+ How DNS Works (Step-by-Step)
+
+1. Request: You type `facebook.com` into your web browser.
+2. Query: Your computer asks the **DNS Server**: *"What is the IP address for `facebook.com`?"*
+3. Lookup: The DNS Server searches its database for the record and responds: *"The IP address is `157.240.22.35`."*
+4. Connection: Your browser connects directly to `157.240.22.35` and loads the web page.
+
+
+-------
+-------In Simle words 
+
+DNS (Domain Name System) – Internet Ka Phonebook
+Problem Kya Thi?
+Computers ek doosre ko sirf IP addresses (142.250.190.46) se samajhte hain, lekin insaanon ke liye hazaron websites ke IP addresses yaad rakhna namumkin hai.
+
+
+Solution & Simple Example
+Real-Life Example: Aap apne phone me contact list use karte hain. Aapko apne friend ka phone number yaad nahi hota, aap bas "Ali" search karte hain aur phone call mil jati hai.
+
+Network Role: DNS internet ka Phonebook hai. Jab aap browser me google.com likhte hain, toh DNS server is naam ko dhoond kar uska IP address (142.250.190.46) browser ko la kar deta hai.
+
+
+DNS Kaise Kaam Karta Hai? (Step-by-Step)
+Aap browser me type karte ho: facebook.com.
+
+Aapka PC DNS Server se poochta hai: "Bhai facebook.com ka IP address kya hai?"
+
+DNS Server apni diary (Database) check karta hai aur bolta hai: "Iska IP 157.240.22.35 hai."
+
+Aapka browser direct us IP se connect ho jata hai aur site khul jati hai.
