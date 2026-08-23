@@ -1,0 +1,61 @@
+Subnetting In Computer Network_01
+
+Subnetting is the process of taking a single, large network and dividing it into smaller, isolated sub-networks called subnets.
+
+If CIDR is custom-packaging the size of a network block, Subnetting is chopping up that block internally into different rooms or departments.
+
+Imagine you own a 1-story building (one big network).
+
+Without Subnetting: Everyone sits in one massive open hall. All 200 employees can hear each other talking (broadcast noise), and anyone can walk up to the CEO's desk or HR files (no security boundaries).
+
+
+With Subnetting: You build walls to create separate rooms (subnets)—one room for HR, one for Finance, and one for IT. Now, noise is kept inside each room, and people can't enter other rooms without going through a secured door (a router/firewalls).
+
+
+Why Do We Need Subnetting?
+Reduces Network Congestion (Broadcast Storms): In a single big network, when one PC sends a broadcast message, every single device receives it. Subnetting confines that chatter to its own small room.
+
+Enhances Security: You can isolate sensitive departments. For instance, PCs in the Guest-Wi-Fi subnet won't be able to talk to PCs in the Finance subnet.
+
+Efficient IP Management: Instead of giving a small office branch a massive pool of addresses, you give them just a small subnet that fits their exact size.
+
+
+Subnetting ka matlab hi yahi hai ke ek bare network ko chote-chote hisso me todna (break karna).
+
+Ab yeh samjho ke yeh kaise (how) hota hai.
+
+
+Subnet Mask computer ko yeh batane ke liye hota hai ke IP address ka kitna hissa Network ka naam hai, aur kitna hissa tumhare Device (Host) ka number hai.
+
+
+Isko ek simple example se samjho:
+
+
+Real-Life Analogy: Phone Number
+
+
+Maan lo ek phone number hai: 021-3456789
+
+021 = City Code (Karachi) --->Network Part
+
+3456789 = Aapka personal number ---> Device/Host Part
+
+
+Aapka dimaag naturally janta hai ke 021 city code hai. Lekin computer ko nahi pata hota ke IP address me se kahan tak network ka naam hai aur kahan se computer ka apna number shuru hota hai.
+
+Subnet Mask computer ka wohi dimaag hai jo yeh border line khenchta hai!
+
+Subnet Mask Ka Asal Kaam Kya Hai?
+Jab do computers aapas me baat karte hain, toh Subnet Mask computer ko ek second me bata deta hai ke:
+
+"Yeh dusra computer hamaare apne kamre (same subnet) me hai, ya kisi doosre kamre (different subnet) me?"
+
+Agar Same Subnet me hai: Computer direct data bhej deta hai (Switch ke zariye).
+
+Agar Different Subnet me hai: Computer data ko Router ke paas bhejta hai ke "bhai isko doosre kamre tak pahunchao."
+
+
+Binary Me Subnet Mask Kaise Kaam Karta Hai?
+Computer sirf 1 aur 0 samajhta hai.
+
+Subnet Mask me jahan 1 hota hai --> Woh Network ID hai (Locked).Jahan 0 hota hai ---> Woh Device/Host ka area hai (Open for PCs).
